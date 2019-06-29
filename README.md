@@ -13,20 +13,20 @@ My C code style example:
 ```c
 #pragma once
 
-typedef struct aStruct {
+typedef struct Struct {
   void * structMember;
-} aStruct;
+} Struct;
 
-typedef enum anEnum {
-  AN_ENUM_MEMBER = 0,
-} anEnum;
+typedef enum Enum {
+  ENUM_MEMBER = 0,
+} Enum;
 
-static inline void anInlineProcedure(aStruct * parameter, float * outParameter) {
-  float aLocalVariable = 0.f;
+static inline void inlineProcedure(Struct * parameter, float * outParameter) {
+  float localVariable = 0.f;
   for (unsigned i = 0; i < 10; i += 1) {
-    aLocalVariable += 1.f;
+    localVariable += 1.f;
   }
-  outParameter[0] = aLocalVariable;
+  outParameter[0] = localVariable;
 }
 ```
 
