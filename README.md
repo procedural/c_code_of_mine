@@ -6,7 +6,7 @@ My C code on Github:
 
 My current development environment you can rely on when compiling my code:
 
-Ubuntu 18.04.1 (x64), Clang 7.0, .deb dependencies from [c_ubuntu_dev_env](https://github.com/procedural/c_ubuntu_dev_env).
+Ubuntu 18.04.1 (x64 only), Clang 7.0, .deb dependencies from [c_ubuntu_dev_env](https://github.com/procedural/c_ubuntu_dev_env).
 
 My C code style example:
 
@@ -29,6 +29,12 @@ static inline void inlineProcedure(Struct * parameter, float * outParameter) {
   outParameter[0] = localVariable;
 }
 ```
+
+Rules I follow:
+
+* Strict aliasing is always disabled, `restrict` is never used.
+* Indices are of type `unsigned`, byte counts are of type `uint64_t` (`size_t` is avoided due to Swift translating C's `size_t` to Swift's `Int` which has a different maximum value).
+* Always `goto exit`, never `return` in the middle of a procedure.
 
 See also:
 
