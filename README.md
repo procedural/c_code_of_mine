@@ -39,3 +39,5 @@ Rules I follow:
 See also:
 
 * ['static inline' is better than a macro](https://web.archive.org/web/20140906203157/https://www.kernel.org/doc/Documentation/SubmittingPatches)
+* [An inline function is as fast as a macro](https://gcc.gnu.org/onlinedocs/gcc/Inline.html)
+> GCC does not inline any functions when not optimizing unless you specify the ‘always_inline’ attribute for the function
