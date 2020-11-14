@@ -1,4 +1,4 @@
-My C code on Github:
+My public C code on Github:
 
 * Licensed under ["MIT No Attribution" (MIT-0) license](https://github.com/aws/mit-0). Always.
 * Compiles with Clang only. It __does not__ support GCC, MSVC or any other compiler.
