@@ -36,6 +36,7 @@ Rules I follow:
 * Indices are of type `unsigned`, byte counts are of type `uint64_t` (`size_t` is avoided due to Swift translating C's `size_t` to Swift's `Int` which has a different maximum value).
 * Always `goto exit`, never `return` in the middle of a procedure.
 * Initialize structs with `= {0}` for compatibility with MSVC.
+* `enum` is a 32-bit `unsigned` or `int` value, misintepretation of this is a compiler's problem.
 
 See also:
 
