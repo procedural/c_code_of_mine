@@ -21,7 +21,7 @@ typedef enum Enum {
   ENUM_MEMBER = 0,
 } Enum;
 
-static inline void inlineProcedure(Struct * parameter, float * outParameter) {
+static inline void inlineProcedure(const Struct * parameter, float * outParameter) {
   float localVariable = 0.f;
   for (unsigned i = 0; i < 10; i += 1) {
     localVariable += 1.f;
