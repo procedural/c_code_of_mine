@@ -37,6 +37,7 @@ Rules I follow:
 * Always `goto exit`, never `return` in the middle of a procedure.
 * Initialize structs with `= {0}` for compatibility with MSVC.
 * `enum` is a 32-bit `unsigned` or `int` value, misintepretation of this is a compiler's problem.
+* Always separate `#if` blocks, never `#else`, never `#elif`.
 
 See also:
 
