@@ -38,6 +38,7 @@ Rules I follow:
 * Initialize structs with `= {0}` for compatibility with MSVC.
 * `enum` is a 32-bit `unsigned` or `int` value, misintepretation of this is a compiler's problem.
 * Always separate `#if` blocks, never `#else`, never `#elif`.
+* Enums are always numbered explicitly.
 
 See also:
 
