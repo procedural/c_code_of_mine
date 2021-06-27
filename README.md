@@ -40,6 +40,14 @@ Rules I follow:
 * Always separate `#if` blocks, never `#else`, never `#elif`.
 * Enums are always numbered explicitly.
 
+`CMakeLists.txt` I start with:
+
+```cmake
+set(CMAKE_C_COMPILER_FORCED TRUE)
+project(main C)
+add_executable(main main.c)
+```
+
 See also:
 
 * ['static inline' is better than a macro](https://web.archive.org/web/20140906203157/https://www.kernel.org/doc/Documentation/SubmittingPatches)
