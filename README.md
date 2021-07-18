@@ -36,7 +36,7 @@ Rules I follow:
 * Always `goto exit`, never `return` in the middle of a procedure.
 * `enum` is a 32-bit `unsigned` or `int` value, misintepretation of this is a compiler's problem.
 * Always separate `#if` blocks, never `#else`, never `#elif`.
-* Enums are always numbered explicitly.
+* Enum members are always enumerated explicitly.
 
 `CMakeLists.txt` I start with:
 
